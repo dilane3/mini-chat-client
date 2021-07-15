@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #3e4bff;
+  font-family: arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 30%;
+  height: auto;
+}
+
+.login-interface {
+  display: flex;
+  flex-direction: column;
+  width: all;
+  height: 100%;
+}
+
+.name, .room {
+  display: flex;
+  width: all;
+  height: auto;
+  margin: 10px 0;
+}
+
+div.name input,
+div.room input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border-width: 0;
+  padding: 5px 15px !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+h3 {
+  width: all;
+  height: auto;
+  margin: 10px auto;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+button.btn-join {
+  border-width: 0;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin: 20px auto 10px auto;
+}
+
+@media screen and (max-width: 776px) {
+  .container {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .login-interface {
+    padding: 20px;
+  }
+}
