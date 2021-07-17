@@ -61,7 +61,7 @@ const Chat = ({ location }) => {
       setMessages(msgs);
       setMessage("");
     });
-  }, [messages]);
+  });
 
   const handleSendMessage = () => {
     if (message.length > 0) {
