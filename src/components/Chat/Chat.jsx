@@ -59,7 +59,6 @@ const Chat = ({ location }) => {
       msgs.push(msg);
 
       setMessages(msgs);
-      setMessage("");
     });
   });
 
